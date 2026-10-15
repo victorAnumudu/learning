@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lessgooo — your practical roadmap from DevOps beginner to confident builder.">
+  <title>Lessgooo — DevOps, from zero to hero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span class="pulse"></span> YOUR DEVOPS JOURNEY STARTS HERE <span class="announcement-right">No experience needed <span aria-hidden="true">↗</span></span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Lessgooo home"><span class="brand-mark">L<span>↗</span></span><span>lessgooo<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#roadmap">Roadmap</a><a href="#toolkit">Toolbox</a><a href="#projects">Projects</a><a href="#about">About</a>
+      <a class="nav-cta" href="#roadmap">Start learning <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> THE PRACTICAL DEVOPS PLAYBOOK</div>
+        <h1>From <span class="muted-word">zero</span><br>to <span class="gradient-word">ship it.</span></h1>
+        <p class="hero-lead">Learn the tools, build real things, and understand how software gets from your laptop to the world. One small win at a time.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#roadmap">Explore the roadmap <span>↗</span></a><a class="text-link" href="#projects"><span class="play-icon">▶</span> See what you'll build</a></div>
+        <div class="hero-proof"><div class="avatar-stack"><span>⌘</span><span>$_</span><span>☁</span></div><p><strong>Learn by doing.</strong><br><span>Less theory. More terminal time.</span></p></div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-glow"></div>
+        <div class="terminal-window">
+          <div class="terminal-top"><div class="window-dots"><i></i><i></i><i></i></div><span>lessgooo@learning-lab:~</span><span class="terminal-lock">● LIVE LAB</span></div>
+          <div class="terminal-body">
+            <div class="terminal-line"><span class="prompt">➜</span> <span class="command">git status</span></div>
+            <div class="terminal-output">On branch <span class="green">main</span><br>nothing to commit, working tree clean</div>
+            <div class="terminal-line"><span class="prompt">➜</span> <span class="command">docker build -t my-app .</span></div>
+            <div class="terminal-output"><span class="green">✓</span> Image built successfully</div>
+            <div class="terminal-line"><span class="prompt">➜</span> <span class="command">kubectl get pods</span></div>
+            <div class="terminal-output">NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; READY&nbsp;&nbsp; STATUS<br><span class="cyan">web-app</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1/1&nbsp;&nbsp;&nbsp;&nbsp; <span class="green">Running</span></div>
+            <div class="terminal-line last-line"><span class="prompt">➜</span> <span class="typing">I'm getting there<span class="cursor">▌</span></span></div>
+          </div>
+          <div class="terminal-footer"><span><i class="status-dot"></i> Environment ready</span><span>bash · 80×24</span></div>
+        </div>
+        <div class="floating-card card-top"><span class="float-icon">↗</span><div><small>YOUR NEXT LEVEL</small><strong>Cloud native</strong></div></div>
+        <div class="floating-card card-bottom"><div class="progress-ring"><span>03</span></div><div><small>LEARNING PATH</small><strong>Build momentum</strong></div></div>
+        <div class="hero-sticker">KEEP<br>SHIPPING<span>✳</span></div>
+      </div>
+      <div class="hero-bottom"><span>01 / THE MINDSET</span><span class="scroll-cue">SCROLL TO LEVEL UP <span>↓</span></span><span>BUILT FOR BEGINNERS</span></div>
+    </section>
+
+    <section class="stats-strip">
+      <div class="stats-inner"><div><strong>06</strong><span>learning stages</span></div><div><strong>12+</strong><span>hands-on missions</span></div><div><strong>∞</strong><span>ways to keep growing</span></div><p>YOU DON'T NEED TO KNOW IT ALL.<br><b>YOU JUST NEED TO START.</b></p></div>
+    </section>
+
+    <section class="roadmap section-wrap" id="roadmap">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> YOUR LEVEL-UP PLAN</div><h2>A roadmap that<br><span class="gradient-word">actually makes sense.</span></h2></div><p>Follow the path in order, get comfortable with each layer, and learn how the pieces connect. No magic shortcuts required.</p></div>
+      <div class="roadmap-layout">
+        <div class="roadmap-list" id="roadmapList">
+          <button class="roadmap-item active" data-stage="0"><span class="stage-number">01</span><span class="stage-icon">⌘</span><span class="stage-copy"><strong>Get comfortable with Linux</strong><small>Terminal, files, permissions, processes</small></span><span class="stage-arrow">↗</span></button>
+          <button class="roadmap-item" data-stage="1"><span class="stage-number">02</span><span class="stage-icon">⑂</span><span class="stage-copy"><strong>Git &amp; GitHub</strong><small>Version control and collaboration</small></span><span class="stage-arrow">↗</span></button>
+          <button class="roadmap-item" data-stage="2"><span class="stage-number">03</span><span class="stage-icon">▣</span><span class="stage-copy"><strong>Docker &amp; containers</strong><small>Package apps so they run anywhere</small></span><span class="stage-arrow">↗</span></button>
+          <button class="roadmap-item" data-stage="3"><span class="stage-number">04</span><span class="stage-icon">⟳</span><span class="stage-copy"><strong>CI/CD pipelines</strong><small>Test, build, and deliver automatically</small></span><span class="stage-arrow">↗</span></button>
+          <button class="roadmap-item" data-stage="4"><span class="stage-number">05</span><span class="stage-icon">☸</span><span class="stage-copy"><strong>Kubernetes &amp; GitOps</strong><small>Orchestrate and continuously reconcile</small></span><span class="stage-arrow">↗</span></button>
+          <button class="roadmap-item" data-stage="5"><span class="stage-number">06</span><span class="stage-icon">☁</span><span class="stage-copy"><strong>Cloud &amp; observability</strong><small>Deploy, monitor, improve reliability</small></span><span class="stage-arrow">↗</span></button>
+        </div>
+        <article class="stage-detail" aria-live="polite">
+          <div class="detail-top"><span id="detailTag">STAGE 01 / FOUNDATIONS</span><span class="detail-spark">✳</span></div>
+          <div class="detail-icon" id="detailIcon">⌘</div>
+          <h3 id="detailTitle">Make the terminal your friend.</h3>
+          <p id="detailDescription">Before you automate infrastructure, get comfortable moving around a Linux system. Learn what commands do, how files and permissions work, and how to inspect running processes safely.</p>
+          <div class="learn-label">WHAT YOU'LL PRACTICE</div>
+          <ul class="learn-list" id="detailList"><li><span>✓</span> Navigate directories and manage files</li><li><span>✓</span> Read permissions and ownership</li><li><span>✓</span> Inspect processes, services, and logs</li></ul>
+          <div class="detail-footer"><span id="detailDuration">EST. 1–2 WEEKS</span><button class="small-button" id="markComplete">Mark stage complete <span>＋</span></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="toolkit" id="toolkit"><div class="section-wrap">
+      <div class="section-heading toolkit-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> THE TOOLBOX</div><h2>Tools are cool.<br><span class="gradient-word">Knowing why is cooler.</span></h2></div><p>Learn each tool's job first. You don't have to master everything on day one.</p></div>
+      <div class="tool-grid">
+        <article class="tool-card"><div class="tool-card-top"><span class="tool-symbol linux">$_</span><span class="tool-category">FOUNDATIONS</span></div><h3>Linux &amp; Bash</h3><p>Navigate servers, automate repetitive tasks, and understand what's happening under the hood.</p><div class="tool-tags"><span>CLI</span><span>Shell scripts</span></div></article>
+        <article class="tool-card"><div class="tool-card-top"><span class="tool-symbol git">⑂</span><span class="tool-category">VERSION CONTROL</span></div><h3>Git &amp; GitHub</h3><p>Track changes, collaborate without chaos, and keep a reliable history of your code.</p><div class="tool-tags"><span>Branches</span><span>Pull requests</span></div></article>
+        <article class="tool-card"><div class="tool-card-top"><span class="tool-symbol docker">▣</span><span class="tool-category">CONTAINERS</span></div><h3>Docker</h3><p>Package your application and its dependencies into a repeatable, portable image.</p><div class="tool-tags"><span>Images</span><span>Containers</span></div></article>
+        <article class="tool-card"><div class="tool-card-top"><span class="tool-symbol cicd">⟳</span><span class="tool-category">AUTOMATION</span></div><h3>CI/CD</h3><p>Run tests and build releases automatically whenever your team changes code.</p><div class="tool-tags"><span>GitHub Actions</span><span>Workflows</span></div></article>
+        <article class="tool-card"><div class="tool-card-top"><span class="tool-symbol k8s">☸</span><span class="tool-category">ORCHESTRATION</span></div><h3>Kubernetes</h3><p>Manage containers at scale and describe the desired state of your applications.</p><div class="tool-tags"><span>Pods</span><span>Deployments</span></div></article>
+        <article class="tool-card"><div class="tool-card-top"><span class="tool-symbol cloud">☁</span><span class="tool-category">CLOUD &amp; RELIABILITY</span></div><h3>Cloud &amp; monitoring</h3><p>Run services on cloud infrastructure and use metrics and logs to understand health.</p><div class="tool-tags"><span>Cloud basics</span><span>Observability</span></div></article>
+      </div>
+    </div></section>
+
+    <section class="projects section-wrap" id="projects">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> LEARN BY BUILDING</div><h2>Proof beats <span class="gradient-word">promises.</span></h2></div><p>Build a portfolio that shows what you can do. Start small, document your work, then add complexity.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-feature"><div class="project-visual pipeline-visual"><div class="pipeline-node"><span>⌨</span><small>CODE</small></div><div class="pipeline-connector"></div><div class="pipeline-node"><span>✓</span><small>TEST</small></div><div class="pipeline-connector"></div><div class="pipeline-node"><span>▣</span><small>BUILD</small></div><div class="pipeline-connector"></div><div class="pipeline-node"><span>🚀</span><small>DEPLOY</small></div><div class="visual-caption">A SIMPLE DELIVERY PIPELINE</div></div><div class="project-info"><div class="project-meta"><span>MISSION 01</span><span class="difficulty">● BEGINNER</span></div><h3>Automate your first release</h3><p>Create a simple app, store it in GitHub, and use a workflow to run checks whenever you push code.</p><a href="#starter-lab" class="project-link">Explore starter lab <span>↗</span></a></div></article>
+        <article class="project-card"><div class="project-visual docker-visual"><div class="cube">▣</div><div class="docker-label">APP + DEPENDENCIES<br><span>→ PORTABLE IMAGE</span></div><div class="visual-caption">PACKAGE IT ONCE. RUN IT ANYWHERE.</div></div><div class="project-info"><div class="project-meta"><span>MISSION 02</span><span class="difficulty">● BEGINNER</span></div><h3>Containerize an app</h3><p>Write a Dockerfile, build an image, and run your app in a container on your own machine.</p><a href="#starter-lab" class="project-link">Explore starter lab <span>↗</span></a></div></article>
+        <article class="project-card"><div class="project-visual k8s-visual"><div class="cluster-ring"><span>☸</span><i>●</i><i>●</i><i>●</i></div><div class="visual-caption">DESCRIBE IT. DEPLOY IT. OBSERVE IT.</div></div><div class="project-info"><div class="project-meta"><span>MISSION 03</span><span class="difficulty intermediate">● NEXT LEVEL</span></div><h3>Deploy to Kubernetes</h3><p>Deploy a containerized app to Minikube, expose it locally, and inspect its health.</p><a href="#starter-lab" class="project-link">Explore starter lab <span>↗</span></a></div></article>
+      </div>
+    </section>
+
+    <section class="starter-lab" id="starter-lab"><div class="section-wrap lab-layout">
+      <div class="lab-copy"><div class="eyebrow"><span class="eyebrow-line"></span> YOUR FIRST WIN</div><h2>One command<br>at a time.</h2><p>Start with a safe, read-only command. Run it in your terminal and see what your machine reports.</p><div class="lab-note"><span>i</span><p><strong>Beginner tip</strong><br>Understand a command before running it with <code>sudo</code> or changing system files.</p></div></div>
+      <div class="lab-terminal"><div class="terminal-top"><div class="window-dots"><i></i><i></i><i></i></div><span>TRY IT YOURSELF</span><span class="copy-status" id="copyStatus">SAFE COMMAND</span></div><div class="lab-content"><div class="lab-step">01 <span>CHECK YOUR CURRENT LOCATION</span></div><div class="copy-command"><code id="labCommand">pwd</code><button id="copyCommand" aria-label="Copy command">Copy <span>▣</span></button></div><p id="commandDescription">Prints the full path of the directory you're currently in. It does not change anything.</p><div class="lab-step lab-step-second">02 <span>CHOOSE ANOTHER COMMAND</span></div><div class="command-options"><button class="command-option selected" data-command="pwd" data-description="Prints the full path of the directory you're currently in. It does not change anything.">pwd <small>Current directory</small></button><button class="command-option" data-command="whoami" data-description="Prints the username of the account running your terminal session.">whoami <small>Current user</small></button><button class="command-option" data-command="ls" data-description="Lists files and folders in the current directory. It does not edit or delete them.">ls <small>List files</small></button></div><div class="lab-output"><span class="output-dot"></span> These commands are read-only and safe for a first practice session.</div></div></div>
+    </div></section>
+
+    <section class="principles section-wrap" id="about"><div class="principles-intro"><div class="eyebrow"><span class="eyebrow-line"></span> THE LESSGOOO WAY</div><h2>Progress over<br><span class="gradient-word">perfection.</span></h2><p>DevOps is a way of working, not a checklist of tools. Build the habits that help you learn, collaborate, and improve.</p></div><div class="principle-list"><div class="principle"><span>01</span><div><h3>Stay curious</h3><p>Ask what a command does, why a tool exists, and how the pieces fit together.</p></div><span class="principle-icon">✳</span></div><div class="principle"><span>02</span><div><h3>Break things safely</h3><p>Practice in local labs, keep backups, and learn to diagnose before changing things.</p></div><span class="principle-icon">⌁</span></div><div class="principle"><span>03</span><div><h3>Document your wins</h3><p>Write down what you built, what failed, and how you fixed it. That's real experience.</p></div><span class="principle-icon">↗</span></div></div></section>
+
+    <section class="final-cta"><div class="cta-orb orb-one"></div><div class="cta-orb orb-two"></div><div class="cta-content"><div class="eyebrow"><span class="eyebrow-line"></span> YOUR FUTURE SELF SAYS THANKS</div><h2>Ready when<br><span>you are.</span></h2><p>You don't have to be an expert to begin. You become one by beginning.</p><a class="button button-dark" href="#roadmap">Let's get into it <span>↗</span></a><div class="cta-footnote">NO HYPE. NO SHORTCUTS. JUST PROGRESS.</div></div></section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">L<span>↗</span></span><span>lessgooo<span class="brand-dot">.</span></span></a><p>Made for the curious, the builders, and the “let me try it” people.</p><div class="footer-right"><span>LEARN · BUILD · SHIP</span><a href="#home">BACK TO TOP ↑</a></div><div class="footer-bottom"><span>© <span id="year"></span> LESSGOOO</span><span>YOUR DEVOPS JOURNEY, YOUR PACE.</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
